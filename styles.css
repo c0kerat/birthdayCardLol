@@ -1,0 +1,56 @@
+* {
+    user-select: none;
+}
+
+body,html {
+    min-height: 100vh;
+    perspective: 900px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:  100vh;
+}
+
+#main-card {
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-card img {
+    width: 100px;
+    height: 200px;
+}
+
+.page {
+    min-width: 450px;
+    min-height: 635px;
+    position: absolute;
+    transform-origin: 0 50%;
+    background-image: url(img/paper2.jpg);
+}
+
+#front-page-1,#back-page-1,#front-page-2,#back-page-2 {
+    display: flex;
+}
+
+#front-page-2 {
+    transform: translateX(450px) translateZ(-1px) rotateY(180deg);
+    
+}
+#back-page-1 {
+    transform: rotateY(-90deg) translateX(-450px);
+    
+}
+
+#back-page-2 {
+    translate: 1px;
+    transform: rotateY(90deg);
+}
